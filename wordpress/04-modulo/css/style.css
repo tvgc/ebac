@@ -1,0 +1,135 @@
+/* Arquivo CSS geral com estilos dos elementos de todas páginas */
+
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color01: #124E78;
+    --color02: #F0F0C9;
+    --color03: #f7ce48;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    background-color: var(--color03);
+    color: var(--color01);
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;     
+    background: #ccc;
+    padding: 20px;
+    background-color: white;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: var(--color02);
+    font-weight: 700;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: inline-block;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: var(--color01);
+  }
+
+  article > h1,
+  article > p {
+    color: white;
+  }
+
+  section {
+    max-width: 1024px;
+    margin-inline: auto;
+    display: flex;
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  form > div {
+    padding: 20px 40px;
+    background-color: var(--color02);
+
+  }
+
+  form:nth-child(1) {
+
+  }
+
+  label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  form > div:nth-child(-n+3) input, textarea {
+    width: 100%;
+    display: inline-block;
+  }
+
+   .button-box {
+    width: 100%;
+  }
+
+  .button {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* Style the footer */
+  footer {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color03);
+    color: var(--color01);
+    font-weight: 600;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
