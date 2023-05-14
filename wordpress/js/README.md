@@ -12,3 +12,4 @@ Exercício 1.
 7. Fim.
 
 Exercício 2.
+[https://jsfiddle.net/rvn4gp6L/4/]
