@@ -1,0 +1,167 @@
+:root {
+    --color1: #C34F24;
+    --color1-lighter: #fcf3f0;
+    --color1-light: #E88662;
+    --color1-darker: #531600;
+    --color1-dark: #922A03;
+    --color2: #198755;
+    --color2-lighter: #A3D2BB;
+    --color2-light: #43A076;
+    --color2-darker: #00391F;
+    --color2-dark: #026538;
+
+}
+
+body {
+    background-color: #faf1ee;
+}
+
+header {
+    background-color: var(--color1);
+}
+
+h1 {
+    color: var(--color1-lighter);
+    font-weight: 900;
+}
+
+header div .col {
+    display: flex;
+    place-items: center;    
+}
+
+header div .col ul {    
+    font-weight: 700;
+    flex-wrap: nowrap;
+}
+
+header div .col ul li {
+    outline: none;
+}
+
+header div .col ul a {
+    color: var(--color1-light);
+}
+
+header div .col ul a:hover {
+    color: var(--color1-lighter);
+}
+
+header div .col ul a:active {
+    color: var(--color1-dark);
+}
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+h2 {
+    color: var(--color1-darker);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 768px){
+    #sobre .row {
+        gap: 3rem;
+    }
+
+    #sobre a {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #contato button {
+        width: 100%;
+    }
+}
+
+
+h5 {
+    color: var(--color2-darker);
+    font-weight: 700;
+}
+
+.card-body {
+    background-color: var(--color2-lighter);
+}
+
+div .card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body a {
+    background-color: var(--color2);
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.card-body a:hover {
+    background-color: var(--color2-light);
+}
+
+.card-body a:focus {
+    background-color: var(--color2-dark);
+}
+
+footer {
+    background-color: var(--color1);
+}
+
+footer .row {
+    padding: 2rem 0;
+}
+
+footer .logo {
+    color: var(--color1-lighter);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+footer .col div {
+    color: var(--color1-light);
+    font-weight: 500;
+}
+
+footer .col div:first-child {
+    color: var(--color1-lighter);
+    font-weight: 600;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+#produtos .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #produtos .cards {
+        display: grid;
+        grid-template-columns: minmax(50vw, 500px);
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    footer .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
