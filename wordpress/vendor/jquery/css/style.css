@@ -738,3 +738,21 @@ a {
 	} 
 
 }
+
+
+
+/*TESTIMONIALS*/
+
+.testimonials {
+	margin-bottom: 100px;
+}
+
+.testimonials .container,
+#testimonialCarousel {
+	height: 500px;
+}
+
+.testimonials img {
+	width: auto;
+	height: 500px;
+}
