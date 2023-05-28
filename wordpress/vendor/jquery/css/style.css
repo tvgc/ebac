@@ -756,3 +756,8 @@ a {
 	width: auto;
 	height: 500px;
 }
+
+.testimonials span {
+	color: black;
+	background-color: black;
+}
